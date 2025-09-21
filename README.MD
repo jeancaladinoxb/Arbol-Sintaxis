@@ -1,4 +1,4 @@
-##Árbol de Sintaxis 
+## Árbol de Sintaxis 
 
 Para este ejercicio se desarrolló un código en el lenguaje python que recibe y lee un archivo txt llamado gracias.txt que contiene una gramática para la interpretación básica de operaciones aritméticas como el operador suma, multiplicación y el uso de paréntesis. 
 
