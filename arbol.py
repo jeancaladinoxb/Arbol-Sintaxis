@@ -27,13 +27,14 @@ class Parser:
             return None
         nodo.append(nodoT)
 
-        while self.reconocer("+"):
-            nodoMas = ["+"]
+        while self.reconocer("+") or self.reconocer("-"):
+            operador = self.tokens[self.pos - 1] 
+            nodoOp = [operador]
             nodoT2 = self.parseT()
             if nodoT2 is None:
                 return None
-            nodoMas.append(nodoT2)
-            nodo.append(nodoMas)
+            nodoOp.append(nodoT2)
+            nodo.append(nodoOp)
         return nodo
 
     def parseT(self):
