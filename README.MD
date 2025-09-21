@@ -4,7 +4,7 @@ Para este ejercicio se desarrolló un código en el lenguaje python que recibe y
 
 La gramática que se encuentra en dicho documento es: 
 
-E -> E + T | T
+E -> E + T | E - T | T
 T -> T * F | F
 F -> ( E ) | num
 
